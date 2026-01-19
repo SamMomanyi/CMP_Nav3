@@ -12,6 +12,13 @@ sealed interface Route: NavKey {
     data object TodoList : Route,NavKey
 
     @Serializable
+    data object TodoFavorites : Route,NavKey
+
+    @Serializable
     data class  TodoDetail(val todo : String) : Route,NavKey
+
+    @Serializable
+    data object Settings: Route,NavKey
+
 
 }

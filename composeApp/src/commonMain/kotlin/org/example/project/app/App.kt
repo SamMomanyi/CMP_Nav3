@@ -27,12 +27,6 @@ import org.example.project.navigation.NavigationRoot
 @Preview
 fun App() {
     MaterialTheme {
-        Scaffold{innerPadding ->
-
-            NavigationRoot(
-                modifier = Modifier
-                    .padding(innerPadding)
-            )
-        }
+            NavigationRoot()
     }
 }
